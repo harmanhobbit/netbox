@@ -1007,6 +1007,21 @@ class InterfaceTypeChoices(ChoiceSet):
     TYPE_SUMMITSTACK256 = 'extreme-summitstack-256'
     TYPE_SUMMITSTACK512 = 'extreme-summitstack-512'
 
+    # Audio
+    TYPE_AUDIO_3XLR = '3xlr'
+    TYPE_AUDIO_4XLR = '4xlr'
+    TYPE_AUDIO_5XLR = '5xlr'
+    TYPE_AUDIO_6XLR = '6xlr'
+    TYPE_AUDIO_7XLR = '7xlr'
+    TYPE_AUDIO_MIDI = 'midi'
+    TYPE_AUDIO_TS = 'ts'
+    TYPE_AUDIO_TRS = 'trs'
+    TYPE_AUDIO_MINI_JACK = 'mini-jack'
+    TYPE_AUDIO_BNC = 'bnc'
+    TYPE_AUDIO_RCA = 'rca'
+    TYPE_AUDIO_TA4F = 'ta4f'
+    TYPE_AUDIO_LEMO = 'lemo'
+
     # Other
     TYPE_OTHER = 'other'
 
@@ -1207,6 +1222,24 @@ class InterfaceTypeChoices(ChoiceSet):
                 (TYPE_SUMMITSTACK128, 'Extreme SummitStack-128'),
                 (TYPE_SUMMITSTACK256, 'Extreme SummitStack-256'),
                 (TYPE_SUMMITSTACK512, 'Extreme SummitStack-512'),
+            )
+        ),
+        (
+            _('Audio'),
+            (
+                (TYPE_AUDIO_3XLR, '3 pin XLR'),
+                (TYPE_AUDIO_4XLR, '4 pin XLR'),
+                (TYPE_AUDIO_5XLR, '5 pin XLR'),
+                (TYPE_AUDIO_6XLR, '6 pin XLR'),
+                (TYPE_AUDIO_7XLR, '7 pin XLR'),
+                (TYPE_AUDIO_MIDI, '5 pin midi'),
+                (TYPE_AUDIO_TS, 'TS 1/4 inch jack'),
+                (TYPE_AUDIO_TRS, 'TRS 1/4 inch jack'),
+                (TYPE_AUDIO_MINI_JACK, 'TRS mini jack'),
+                (TYPE_AUDIO_BNC, 'BNC'),
+                (TYPE_AUDIO_RCA, 'RCA'),
+                (TYPE_AUDIO_TA4F, 'TA4F'),
+                (TYPE_AUDIO_LEMO, 'Lemo'),
             )
         ),
         (
